@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.add-btn,
+.edit-btn {
+  background-color: #fe424d;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.delete-btn {
+  border: none !important;
+  padding: 0.5rem 1rem;
+}
+.navbar {
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.234);
+  backdrop-filter: blur(10px);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.f-info-socials i {
+  font-size: 1.35rem;
+}
+.f-info {
+  height: 8rem;
+  display: flex;
+  background-color: #ebebeb;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  gap: 0.93rem;
+}
+.card {
+  border: none;
+  margin-bottom: 2rem;
+}
+.card-cover {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.card-img-top {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 2.3rem 1.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.card-text-msg {
+  position: relative;
+  top: 20rem;
+  transition: all 0.4s ease-in-out;
+}
+.card-cover:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.437);
+}
+.card-cover:hover .card-text-msg {
+  top: 0;
+}
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none !important;
+  box-shadow: 0 0 10px 5px #fe424fa9 !important;
+}
+.show-img {
+  width: 95%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.btns {
+  display: flex;
+  gap: 1.7rem;
+}
+.show-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
